@@ -29,8 +29,9 @@ public class Main {
 //        System.out.println(Fact(0));
 //        System.out.println(Fact2(6));
 //        System.out.println(Fact2(8));
-        System.out.println(Fib(2));
-        System.out.println(Fib(6));
+//        System.out.println(Fib(2));
+//        System.out.println(Fib(6));
+//        System.out.println(Power1(10,0));
     }
 
     //fun-1
@@ -199,6 +200,20 @@ public class Main {
         if(n==0) return 0;
         if(n==1) return 1;
         return Fib(n-1)+Fib(n-2);
+    }
+
+    //fun-37
+    public static float Power1(int a,int b){
+        return (float) Math.pow(a,b);
+    }
+
+    //fun-40
+    public static float Exp1(float x,int e){
+        int a=0;
+        for (int i = 1; i <=e; i++) {
+            a*=i;
+        }
+        return (float) ((Math.pow(x,e))/a);
     }
 
 }
